@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page-container {
+  padding: 1rem;
+  min-height: 100vh;
+  background: white;
+  transition: background-color 0.3s ease;
+}
+html.dark .page-container {
+  background: #171717;
+}
+
+.toggle-btn {
+  margin-bottom: 1rem;
+  border: 2px solid #ef4444;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  background: transparent;
+  color: black;
+}
+html.dark .toggle-btn {
+  background: #f5f5f5;
+  color: #171717;
+}
+
+.messages-list {
+  margin-bottom: 1rem;
+}
+.messages-list li {
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  background: #f3f4f6;
+}
+html.dark .messages-list li {
+  background: #f3f4f6;
+}
+
+.input-area {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 0.5rem 1rem;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 0.5rem;
+}
+html.dark .input-area {
+  background: #262626;
+}
+
+.input-box {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid #d1d5db;
+  background: white;
+  color: black;
+}
+html.dark .input-box {
+  background: #404040;
+  border: 1px solid #4b5563;
+  color: white;
+}
+.input-box:focus {
+  outline: none;
+}
+
+.send-btn {
+  background: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+}
+html.dark .send-btn {
+  background: #f5f5f5;
+  color: black;
+}
