@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"npm run server:start\" \"npm run frontend\"",
-    "server:start": "node server/index.js",
-    "server:build": "tsc server/index.ts",
+    "dev": "concurrently\"npm run server:start\" \"npm run frontend\"",
+    "server:start": "node server/server.js",
+    "server:build": "tsc server/server.ts",
     "frontend": "next dev"
   },
   "dependencies": {
