@@ -21,6 +21,8 @@ function ShoppingList({ shoppingList, removeItem, budget }: ShoppingListProps) {
           key={index}
         >
           <span>{val.name} - ${val.cost.toFixed(2)}</span>
+          <span>{val.category}</span>
+          <span>{val.dueDate ? `Due: ${val.dueDate}` : ''}</span>
           <span>
             <button className="btn" onClick={removeItem} value={val.name}>
               Remove
